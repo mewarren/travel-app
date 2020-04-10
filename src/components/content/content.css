@@ -1,19 +1,63 @@
 
 
+  .hero{
+    /* height: 100vh; */
+    position: fixed;
+    /* top: 0px; */
+    /* object-fit: cover; */
+    z-index: -1;
+  
+  }
 
-.hero{
-  height: 100vh;
-  position: sticky;
+.background, .wave2, .color-transition {
+  width: 100vw;
+  position: absolute;
   top: 0px;
-  object-fit: cover;
-  z-index: -1;
+}
+
+.background > img, .wave2 >img, .color-transition > img{
+  width: 100%;    
+}
+
+/* .background {
+  position: absolute;
+  top: 0px;
+} */
+
+/* .wave2, .color-transition {
+  width: 100vw;
+  position: relative;
+  top: 0px;
+} */
+
+.wave2 {
+  z-index: 1;
+}
+
+.color-transition {
+  z-index: 2;
 }
 
 .text-overlay{
   width: 60%;
-  height: auto;
-  margin: -100vh auto 0;
-  position: sticky;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
   border-top: 2px solid chartreuse;
+  z-index: 10;
 
+}
+
+.body-copy{
+  background-color: #001f27;
+  height: 300vh;
+  z-index: -2;
+
+}
+
+.body-copy > p {
+  margin: 0 auto;
+  width: 50%;
+  padding: 30px 5px;
+  color: #e2f9ff;
 }

@@ -1,8 +1,8 @@
-/* #main-content{
+#main-content{
   height: 100vh;
-} */
+}
 
-#root {
+/* #root {
   min-height: 100vh;
   display: grid;
   grid-template-areas:
@@ -10,7 +10,7 @@
   "content"
   "footer";
   grid-template-rows: auto 1fr auto;
-}
+} */
 
 .maxwidth-wrap {
   width: 100%;
